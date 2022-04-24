@@ -4,5 +4,8 @@ node_modules
 # env
 .env
 
+# .sql
+*.sql
+
 # vs_code
-.vs_code
+.vscode
