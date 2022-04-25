@@ -1,8 +1,8 @@
 const express = require('express');
-const { anime } = require('../controllers/api');
+const { getAnimeImages } = require('../controllers/api');
 
 const route = express.Router();
 
-route.get('/', anime);
+route.get('/', getAnimeImages);
 
 module.exports = route 

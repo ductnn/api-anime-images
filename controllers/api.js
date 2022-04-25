@@ -1,6 +1,6 @@
 const pool = require('../config/db_config')
 
-const anime = async (req, res) => {
+const getAnimeImages = async (req, res) => {
     try {
         const data = await pool.query('SELECT * FROM animes ORDER BY anime_id ASC'); 
         res.status(200).json({
@@ -15,4 +15,4 @@ const anime = async (req, res) => {
     }
 }
 
-module.exports = { anime };
+module.exports = { getAnimeImages };
