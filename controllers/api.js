@@ -1,8 +1,8 @@
-const pool = require('../config/db_config')
+const db = require('../config/db_config')
 
 const getAnimeImages = async (req, res) => {
     try {
-        const data = await pool.query('SELECT * FROM animes ORDER BY anime_id ASC'); 
+        const data = await db.query('SELECT * FROM animes ORDER BY anime_id ASC'); 
         res.status(200).json({
             success: true,
             data: data.rows
